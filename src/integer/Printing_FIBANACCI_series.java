@@ -7,6 +7,7 @@ public class Printing_FIBANACCI_series
 		int limit = 8;
 		int fib1 = 0;
 		int fib2 = 1;
+		
 		System.out.println("Printing first "+limit+" fibanacci numbers ");
 		System.out.println("");
 
@@ -26,6 +27,7 @@ public class Printing_FIBANACCI_series
 		int range = 200;
 		int first = 0;
 		int second = 1;
+		
 		System.out.println("Printing fibanacci numbers with in "+range+" ");
 		System.out.println("");
 
