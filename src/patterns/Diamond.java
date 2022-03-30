@@ -23,7 +23,7 @@ public class Diamond
 			{
 				System.out.print(space);
 			}
-			for (int j = i; j < row; j++) 
+			for (int j = i; j <=row; j++) 
 			{
 				System.out.print(symbol2+" ");
 			}
@@ -45,7 +45,7 @@ public class Diamond
 			{
 				System.out.print(space);
 			}	
-			for (int j = 1; j < i; j++) 
+			for (int j = 1; j <= i; j++) 
 			{
 				System.out.print(symbol2+" ");
 			}
