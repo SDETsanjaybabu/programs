@@ -5,25 +5,35 @@ public class Print_order_of_occurance_of_string
 {
 	public static void main(String[] args) 
 	{
-		String s = "aabbbcccca";
-		char c = 'a';
-	  for (char i = c; i <='z'; i++) 
-	  {
-		
-		for (int j = 0; j < s.length(); j++)
+		String s = "aabbbaaaggggaaaagggkkkaa";
+		int j=0;
+		boolean flag = true;
+		while (flag)
 		{
-			int count = 0;
-			if (i==s.charAt(j))
+		for (char l = 'a'; l <= 'z' ; l++) 
+		{
+			int count =0;
+
+			for (int i = j; i < s.length(); i++) 
 			{
-				count++;
-				System.out.println(i);
-			}else if (i!=s.charAt(j)) 
-			{
-				i++;
+				if (s.charAt(i)==l) 
+				{
+					count++;
+					if (i==s.length()-1)
+					{
+						flag=false;
+					}
+				}else {
+					j=i;
+					break;
+				}
+			}
+			if (count>0) {
+				System.out.print(l+""+count);
 			}
 			
 		}
-		//System.out.println(i+" = "+count);
-	  }
+
+		}
 	}
 }
