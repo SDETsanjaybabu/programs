@@ -13,7 +13,6 @@ public class Print_order_of_occurance_of_string
 		for (char l = 'a'; l <= 'z' ; l++) 
 		{
 			int count =0;
-
 			for (int i = j; i < s.length(); i++) 
 			{
 				if (s.charAt(i)==l) 
@@ -23,12 +22,14 @@ public class Print_order_of_occurance_of_string
 					{
 						flag=false;
 					}
-				}else {
+				}else 
+				{
 					j=i;
 					break;
 				}
 			}
-			if (count>0) {
+			if (count>0) 
+			{
 				System.out.print(l+""+count);
 			}
 			
