@@ -4,23 +4,24 @@ public class First_and_Second_min_number_without_using_sorting_mechanism
 {
 	public static void main(String[] args) {
 		
-			int[] a = {50,70,10,2,30,40,20,3};
+			int[] a = {10,2,30,40,1,2,0};
 			
 			int fmin = a[0];
-			int smin = a[1];
+			int smin = a[0];
 			
-			for (int i = 1; i < a.length; i++) 
+			for (int i = 0; i < a.length; i++) 
 			{
-				if (a[i]<fmin) 
+				if (a[i]<=fmin) 
 				{
-					smin = fmin;
-					fmin = a[i];
-				}else if (a[i]!=fmin) 
-				{
-					if (a[i]<smin) 
+					if(a[i]!=fmin)
 					{
-						smin=a[i];
+						smin = fmin;
 					}
+					fmin = a[i];
+				}
+				else if(fmin==smin || smin>a[i])
+				{
+					smin=a[i];
 				}
 			}
 			

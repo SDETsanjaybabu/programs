@@ -5,7 +5,7 @@ public class Print_order_of_occurance_of_string
 {
 	public static void main(String[] args) 
 	{
-		String s = "aabbbaaaggggaaaagggkkkaa";
+		String s = "aabbca";
 		int j=0;
 		boolean flag = true;
 		while (flag)
